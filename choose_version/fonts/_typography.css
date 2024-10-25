@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'ProximaNovaBold';
+    font-style:normal;
+    font-weight: normal;
+    src: 
+        local(''),
+        url('./proxima-nova-bold.ttf') format('truetype');
+  }

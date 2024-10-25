@@ -1,0 +1,214 @@
+@import './fonts/_typography.css';
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    max-width: 1520px;
+    align-self: center;
+
+    a {
+        text-decoration: none;
+        height: 100%;
+        min-width: 170px;
+        color: #3d3c40;
+        padding: 0;
+        font-size: 1.3em;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+}
+.buttons {
+    display: flex;
+    gap:10px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width: 1099px) {
+    header {
+        gap:10px;
+        padding: 50px;
+        padding-bottom: 5vh;
+        a {
+            /* padding-bottom: 100px; */
+            font-size: 2rem;
+        }
+    }
+    .choose-version {
+        display: none;
+    }
+    body {
+        background-image: url('./images/phone_version.png');
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+       
+    }
+    .Iphone {
+        margin: 0;
+        padding-top: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+        width: 100vw;
+        height: 40vh;
+        object-fit: contain;
+     }}
+     .Android {
+        max-height: auto;
+        margin: auto;
+        max-width: auto;
+       padding-bottom: 30px;
+        /* display: flex;
+        align-items: center; */
+    }
+    .Android h1{
+        font-size: 2.3em;
+        font-weight: 600;
+        padding-bottom: 30px;
+        text-align: center;
+        font-family: ProximaNovaBold;
+        color:#003F92;
+    }
+    p {
+        padding-bottom: 70px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.3em;
+        text-align: center;
+        /* font-weight: 600; */
+        color:black;
+    }
+    .buttons button {
+        display: flex;
+        height: 40px;
+        width: 250px;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+        border: none;
+        border-radius: 6px;
+        font-size: 1em;
+        outline: none;
+        transition: all 0.15s ease;
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative;
+        border-color: transparent;
+        background-color: rgb(22, 109, 224);
+        color: white;
+        
+        &:hover {
+            background-color: #1a51c8;
+        }
+    
+        &:active,
+        &:focus {
+            background-color: #184ab6;
+        }
+    
+        &:disabled,
+        &:disabled:hover,
+        &:disabled:active {
+            background: rgba(61, 60, 64, 0.08);
+            color: rgba(61, 60, 64, 0.32);
+            opacity: 1;
+        }
+    }
+}
+
+@media(min-width: 1100px) {
+.Android {
+    display: none;
+}
+body {
+    background-image: url('./images/choose-version.png');
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.Iphone {
+    display:none;
+}
+
+header {
+    min-height: 60vh;
+    padding: 30px;
+}
+
+
+.dialog {
+    max-height: auto;
+    margin: auto;
+    display: flex;
+}
+
+.choose-version {
+    width: 100%;
+}
+.choose-version h2{
+    font-size: 2em;
+    font-weight: 600;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: ProximaNovaBold;
+    color:#003F92;
+}
+.choose-version p{
+    font-size: 1em;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.choose-version p a{
+    text-decoration: none;
+    color:#003F92;
+}
+
+.buttons button {
+    display: flex;
+    height: 40px;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    gap: 8px;
+    outline: none;
+    transition: all 0.15s ease;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    border-color: transparent;
+    background-color: rgb(22, 109, 224);
+    color: white;
+    
+    &:hover {
+        background-color: #1a51c8;
+    }
+
+    &:active,
+    &:focus {
+        background-color: #184ab6;
+    }
+
+    &:disabled,
+    &:disabled:hover,
+    &:disabled:active {
+        background: rgba(61, 60, 64, 0.08);
+        color: rgba(61, 60, 64, 0.32);
+        opacity: 1;
+    }
+}
+}
